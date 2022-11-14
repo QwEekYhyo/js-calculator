@@ -7,10 +7,10 @@ h1 {
     display: inline-block;
 }
 
-.calc_row > *:last-child {
+.calc-row > *:last-child {
 }
 
-.calc_row > * {
+.calc-row > * {
     background-color: red;
     float: left;
     border-radius: 0.3em;
