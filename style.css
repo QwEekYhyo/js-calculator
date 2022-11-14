@@ -2,11 +2,21 @@ h1 {
     text-align: center;
 }
 
+/*
 .calc-row {
     display: grid;
     grid-template-columns: 50px 50px 50px 50px;
+} */
+.calculator {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-auto-rows: 50px;
 }
 
-.calc-row > * {
+.calculator div {
     cursor: pointer;
+}
+
+div[data-value="0"] {
+    grid-row: 5;
 }
