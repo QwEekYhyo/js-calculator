@@ -2,22 +2,11 @@ h1 {
     text-align: center;
 }
 
-.calculator  {
-    text-align: center;
-    display: inline-block;
-}
-
-.calc-row > *:last-child {
+.calc-row {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
 }
 
 .calc-row > * {
-    background-color: red;
-    float: left;
-    border-radius: 0.3em;
-    margin: 0.2em;
-    padding: 0.2em;
-    width: 3.3em;
-    height: 100%;
-    box-sizing: border-box;
     cursor: pointer;
 }
