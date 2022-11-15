@@ -1,4 +1,5 @@
 const screen = document.getElementById("screen")
+let currentScreen = ""
 
 function printOnScreen(thing) {
     thing = String(thing)
@@ -25,8 +26,9 @@ div.innerHTML += keys.reverse().map(k => `<button>${k}</button>`).join("");
 let buttons = document.getElementsByTagName("button")
 for (let i in buttons) {
     buttons[i].onclick = function() {
-        printOnScreen(buttons[i].firstChild.data)
+        currentScreen += buttons[i].firstChild.data
+        printOnScreen(currentScreen)
     }
 }
 
-printOnScreen(69)
+printOnScreen(0)
