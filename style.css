@@ -10,6 +10,13 @@ h1 {
     background-color: #348898;
 }
 
+#screen * {
+    float: right;
+    font-size: 65px;
+    margin: auto;
+    margin-right: 5px;
+} 
+
 #calculator {
     width: fit-content;
     margin: auto;
